@@ -3,7 +3,7 @@
  */
 
 
-angular.module('menuApp').controller('menuCtrl', function ($scope,MenuStorage) {
+angular.module('menuApp').controller('cartCtrl', function ($scope,MenuStorage) {
 
   $scope.navList = [
   {"itemSysNo":11,"name":"Profile","type":"P"},{"itemSysNo":12,"name":"Document(w9)","type":"P"},
@@ -22,26 +22,11 @@ angular.module('menuApp').controller('menuCtrl', function ($scope,MenuStorage) {
 	$scope.menuList = {};
 
 
+
     MenuStorage.get("store").then(function (retStorage) {
         $scope.storeList = retStorage.data;
     });
       
-    $scope.selectNav = function (rec) {
-      $scope.selNav= rec;
-      $scope.refreshMenu();
-    };
-    $scope.selectStore = function (rec) {
-      $scope.selStore = rec;
-      $scope.refreshMenu();
-    };
-    $scope.selectType = function (rec) {
-      $scope.selType = rec;
-      $scope.refreshMenu();
-    };
-
-    $scope.checkValuee = function (rec) {
-      rec.itemSysNo ==   $scope.selType
-    };
 
     $scope.refreshMenu = function () {
 
@@ -50,13 +35,12 @@ angular.module('menuApp').controller('menuCtrl', function ($scope,MenuStorage) {
 	        $scope.typeList = retStorage.data;
 	    });
 
-      if ($scope.selStore.itemSysNo <= 0){ return;}   
+
       MenuStorage.get("menu").then(function (retStorage) {
 	        $scope.menuList = retStorage.data;
 	    });
     };    
 
-     console.log("1",$scope.storeList  );
-     console.log("2",$scope.menuList  );
+  $scope.refreshMenu();
 });
 

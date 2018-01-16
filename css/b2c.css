@@ -1,0 +1,46 @@
+
+
+
+
+.menu-item {
+	width: 330px;
+	height: 124px;
+	border: 1px solid #dbdbdb;
+	background-color: #ededed;
+	margin: 18px 2px 26px;
+	padding:0px 0px 5px 0px;
+	float: left;
+}
+
+.menu-item img {
+	margin-top: -26px;
+	padding-left: 15px;
+	padding-right: 5px;
+	float: left;
+}
+
+.menu-description h4 {
+	font-size: 23px;
+	font-family: "AvenirLTStd-Black", sans-serif;
+	color: #141414;
+	line-height: 100%;
+	margin-top: 13px;
+}
+
+.menu-description > span {
+	font-size: 13px;
+	font-family: "AvenirLTStd-Book", sans-serif;
+	font-style: italic;
+	color: #f05223;
+	display: block;
+	margin-bottom: 4px;
+}
+
+.menu-description > p {
+	font-size: 26px;
+	font-family: "AvenirLTStd-Book", sans-serif;
+	font-weight: bold;
+	color: #000;
+}
+
+

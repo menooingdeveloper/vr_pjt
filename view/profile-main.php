@@ -14,6 +14,10 @@
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@google.com">
     </div>
 
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email fdfdfdfdf</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@google.com">
+    </div>
 
 
 </form>
